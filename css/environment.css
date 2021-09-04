@@ -1,0 +1,252 @@
+.naranti__ambiente {
+  background-color: #fff;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  max-width: 2000px;
+  margin: auto;
+}
+
+.naranti__ambiente img {
+  height: 150px;
+}
+
+.naranti__ambiente__info {
+  height: 500px;
+  display: flex;
+  margin: 2rem;
+  max-width: 1500px;
+  padding-top: auto 2rem;
+}
+
+.ambiente__info__info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ambiente__info__text {
+  display: flex;
+}
+
+.ambiente__info__text span {
+  width: 50%;
+  text-align: justify;
+  margin-left: 2rem;
+}
+
+.ambiente__info__info img {
+  height: 250px;
+}
+
+.ambiente__btn {
+  background-color: #86c61d;
+  padding: 0.3rem 3rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  outline: none;
+  border: none;
+  background-color: #86c61d;
+}
+
+.ambiente__btn::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #9fe036;
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+
+.ambiente__btn:hover::before {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+
+.ambiente__btn:hover {
+  cursor: pointer;
+}
+
+.ambiente__info__img {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.ambiente__info__img img {
+  overflow: hidden;
+  height: 100%;
+  max-height: 400px;
+}
+
+@media (max-width: 1512px) {
+  .ambiente__info__text {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .ambiente__info__img img {
+    height: 85%;
+  }
+
+  .naranti__ambiente__info {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1176px) {
+  .naranti__ambiente {
+    height: 600px;
+  }
+
+  .naranti__ambiente img {
+    height: 120px;
+  }
+
+  .ambiente__info__img img {
+    height: 60%;
+    margin-bottom: 5rem;
+  }
+
+  .ambiente__info__text img {
+    height: 200px;
+  }
+
+  .ambiente__info__info {
+    width: 70%;
+    margin-right: 2rem;
+  }
+
+  .ambiente__info__text {
+    justify-content: center;
+  }
+
+  .ambiente__info__text span {
+    width: 80%;
+  }
+
+  .ambiente__btn {
+    padding: 0.1rem 2rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 925px) {
+  .naranti__ambiente {
+    height: 480px;
+  }
+
+  .ambiente__info__img {
+    display: none;
+  }
+
+  .ambiente__info__info {
+    width: 100%;
+    height: 200px;
+  }
+
+  .ambiente__info__text {
+    margin-bottom: 0;
+    align-items: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .naranti__ambiente {
+    height: 520px;
+  }
+
+  .naranti__ambiente > img {
+    height: 100px;
+  }
+
+  .ambiente__info__info {
+    margin-top: 2rem;
+  }
+
+  .ambiente__info__text {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .naranti__ambiente {
+    height: 480px;
+  }
+  .ambiente__info__text img {
+    height: 150px;
+    display: none;
+  }
+
+  .ambiente__info__text span {
+    width: 100%;
+  }
+
+  .naranti__ambiente__info {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+  .naranti__ambiente img {
+    margin-bottom: 0rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .naranti__ambiente img {
+    height: 80px;
+  }
+
+  .naranti__ambiente__info {
+    margin: 1rem auto;
+  }
+
+  .ambiente__info__text span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .naranti__ambiente {
+    height: 450px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .naranti__ambiente img {
+    height: 70px;
+  }
+
+  .ambiente__info__info {
+    margin-right: 0;
+  }
+
+  .ambiente__info__text {
+  }
+
+  .ambiente__info__text span {
+    margin-left: 0;
+    padding: auto 1rem;
+  }
+}
