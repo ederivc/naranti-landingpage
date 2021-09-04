@@ -17,31 +17,8 @@
 
 .hero::before {
   content: "";
-  -webkit-appearance: none;
-  /* background: url(../assets/img/heroBg.jpeg) no-repeat center center fixed; */
   background: url(../assets/img/heroBg.jpeg) no-repeat center center fixed;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
   opacity: 0.5;
-}
-
-@supports (-webkit-touch-callout: none) {
-  .hero::before {
-    background-attachment: scroll;
-  }
-}
-
-@supports not (-webkit-touch-callout: none) {
-  .hero::before {
-    background-attachment: fixed;
-  }
 }
 
 .navbar {

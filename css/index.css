@@ -22,3 +22,40 @@
 body {
   background: var(--darkgray);
 }
+
+.hero::before,
+.orange-col::before,
+.dark-col::before {
+  -webkit-appearance: none;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .hero::before,
+  .orange-col-1::before,
+  .orange-col-2::before,
+  .orange-col-3::before,
+  .dark-col-1::before,
+  .dark-col-2::before {
+    background-attachment: scroll;
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .hero::before,
+  .orange-col-1::before,
+  .orange-col-2::before,
+  .orange-col-3::before,
+  .dark-col-1::before,
+  .dark-col-2::before {
+    background-attachment: fixed;
+  }
+}

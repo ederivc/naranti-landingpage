@@ -50,15 +50,6 @@
   background-color: var(--darkgray);
 }
 
-.orange-col::before,
-.dark-col::before {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
-
 .dark-col::before {
   opacity: 0.1;
 }

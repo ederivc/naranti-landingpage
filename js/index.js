@@ -1,8 +1,6 @@
 const btn = document.querySelector(".menu-toggle");
 const links = document.querySelector(".navbar__menu");
 const navbar = document.querySelector(".navbar");
-const title = document.getElementById("web-title");
-const webTitle = "HACEMOS VISIBLES TUS SUEÑOS";
 
 btn.addEventListener("click", () => {
   btn.classList.toggle("is-active");
@@ -10,5 +8,18 @@ btn.addEventListener("click", () => {
   links.classList.toggle("active");
 });
 
-title.innerHTML = webTitle;
-title.style.setProperty("--characters", webTitle.length);
+const animation = (origin) => {
+  return {
+    distance: "100%",
+    origin: origin,
+    opacity: null,
+    reset: true,
+  };
+};
+
+ScrollReveal().reveal(
+  ".reveal-bottom, .navbar__menu, navbar__brand",
+  animation("top")
+);
+ScrollReveal().reveal(".reveal-left, .web-title", animation("left"));
+ScrollReveal().reveal(".reveal-right", animation("right"));
