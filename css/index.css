@@ -4,6 +4,7 @@
 @import url("map.css");
 @import url("mosaic.css");
 @import url("certificates.css");
+@import url("questions.css");
 
 :root {
   --orange: #fb6c0d;
