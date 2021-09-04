@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 @import url("navbar.css");
 @import url("map.css");
-@import url("mosaic.css");
 @import url("certificates.css");
 @import url("questions.css");
+@import url("clients.css");
+@import url("mosaic.css");
 
 :root {
   --orange: #fb6c0d;
