@@ -17,9 +17,6 @@ const animation = (origin) => {
   };
 };
 
-ScrollReveal().reveal(
-  ".reveal-bottom, .navbar__menu, navbar__brand",
-  animation("top")
-);
+ScrollReveal().reveal(".reveal-bottom, navbar__brand", animation("top"));
 ScrollReveal().reveal(".reveal-left, .web-title", animation("left"));
 ScrollReveal().reveal(".reveal-right", animation("right"));
