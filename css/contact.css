@@ -293,7 +293,7 @@
 
   .form__group input,
   .form__group textarea {
-    width: 90%;
+    width: 100%;
     padding: 5px;
   }
 }
