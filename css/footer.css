@@ -56,7 +56,6 @@
 }
 
 .footer__col ul li a:hover {
-  /* color: #fff; */
   padding-left: 8px;
 }
 
@@ -72,7 +71,6 @@
   border-radius: 50%;
   color: #fff;
   transition: all 0.5s ease;
-  /* color: #000; */
 }
 
 .footer__col .social__links a:hover {

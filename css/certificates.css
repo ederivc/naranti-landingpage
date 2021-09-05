@@ -106,6 +106,7 @@
 @media (max-width: 540px) {
   .certificates {
     height: 380px;
+    overflow: hidden;
   }
 
   .certificate__grid__item img {

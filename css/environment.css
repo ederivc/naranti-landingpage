@@ -105,7 +105,8 @@
 
 @media (max-width: 1300px) {
   .ambiente__info__img img {
-    height: 85%;
+    height: 70%;
+    margin-bottom: 2rem;
   }
 
   .naranti__ambiente__info {
@@ -119,7 +120,7 @@
   }
 
   .naranti__ambiente img {
-    height: 120px;
+    height: 110px;
   }
 
   .ambiente__info__img img {
